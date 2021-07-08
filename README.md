@@ -70,12 +70,10 @@ In the folder you will find several files and folders. Folder will look like thi
 Before executing the next commands let me describe the code a little. There are two folders (res(resource) and src) and one CMake file in the project.
 
 #### SRC
-In the src folder, there is a main.cpp file, Which is the starting point of our program. This file contains nothing but a "Hello world" print.
-
-There is also a Cmake file in the src(source) directory. It contains a few very basic CMake commands like add_executable(contains program name and starting point) target_link_libraries(where you will include all the necessary libraries you need) and install command.
+In the src folder, there is a main.cpp file, Which is the starting point of our program. Also, there are some additional files related to QT UI. There is also a extra library file name **easylogging++**. This is basically used for implement Logginf in the project.
 
 #### RES
-Next res(resource) directory. There are three different files in the res directory. A Cmake file, a .desktop file and .png file. Remember .desktop file and .png file is very important. the desktop file is simply a shortcut that is used to launch applications in Linux. and the png file will be the icon of the project. To create an AppImage, you must have to provide these two file.
+Next res(resource) directory. There are two different files in the res directory. A .desktop file and .png file. Remember .desktop file and .png file is very important. the desktop file is simply a shortcut that is used to launch applications in Linux. and the png file will be the icon of the project. To create an AppImage, you must have to provide these two file.
 
 Desktop file:
 If you open the desktop file, you file find something like this:
@@ -118,14 +116,7 @@ There are some other arguments like **Encoding**, **Terminal**, etc. You can che
 
 **NOTE: keys are case sensitive. Type=Application is not the same as type=Application or TYPE=Application. Please remember that.**
 
-Cmake file:
-This CMake file contains two installation commands. These two command basically said when a package will be generated, where the desktop file and png file should be located.
-
-Now we the final Cmake file which is inside the main folder (not in src or res folder)
-
-This file contains very basic commands like cmake_minimum_required, project(which will be the project name), and add two subdirectories (src and res).
-
-**NOTE: It is not necessary to create 3 separate Cmake file for the program. You can add all the Cmake commands in one file (in the last file, which is outside the src and res folder)**
+Not, let's talk about CMake file. In the main branch I created 3 seperate CMake files (one in src folder, one in res folded and another one is in the root). But in this branch, i only create one CMake files. That means i actually marge the 3 CMake files and make one one CMake file. You can follow anyone you like.
 
 Now we know have some basic idea about all of our files, lets make the project.
 Execute the following command. I build the project in release mode and “/usr” as prefix.
