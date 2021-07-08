@@ -7,6 +7,7 @@ AppImage is a format for distributing portable software on Linux without needing
 To create an AppImage we need some dependencies to be installed.
 
 ### AppImage Builder
+<hr>
 For Debian/Ubuntu system, we need some dependencies to install AppImage. Run this command to get all the dependencies needed to install AppImage builder.
 
 > sudo apt install -y python3-pip python3-setuptools patchelf desktop-file-utils libgdk-pixbuf2.0-dev fakeroot strace fuse
