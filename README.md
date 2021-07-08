@@ -38,12 +38,25 @@ depending on your application, you may need more dependency to be installed.
 
 After finishing the dependencies installation open a terminal. Download the sample code from Github. To get the code, execute the following command.
 
-git clone https://www.opencode.net/azubieta/qt-appimage-template.git
+> git clone https://github.com/mahadyRayhan/AppImage-linux-executable
 
 Next enter the directory. Execute following command to go to the project directory:
 > cd AppImage-linux-executable
 
 In the folder you will find several files and folders. Folder will look like this.
+
+<pre>
+.
+├── CMakeLists.txt
+├── res
+│   ├── CMakeLists.txt
+│   ├── hello-world-appimage.desktop
+│   └── hello-world-appimage.png
+└── src
+    ├── CMakeLists.txt
+    └── main.cpp
+
+</pre>
 
 Before executing the next commands let me describe the code a little. There are two folders (res(resource) and src) and one CMake file in the project.
 
@@ -57,10 +70,19 @@ Next res(resource) directory. There are three different files in the res directo
 
 Desktop file:
 If you open the desktop file, you file find something like this:
---- ----
------
-----
 
+<pre>
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Hello-AppImage-WOrld
+Comment=Hello World To AppImage
+TryExec=hello-world-appimage
+Exec=hello-world-appimage
+Icon=hello-world-appimage
+MimeType=image/x-foo;
+Categories=Utility;
+</pre>
 
 1. [Desktop Entry]
 > The first line of every desktop file and the section header to identify the block of key-value pairs associated with the desktop. Necessary for the desktop to recognize the file correctly.
