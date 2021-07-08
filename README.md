@@ -118,7 +118,8 @@ There are some other arguments like **Encoding**, **Terminal**, etc. You can che
 
 **NOTE: keys are case sensitive. Type=Application is not the same as type=Application or TYPE=Application. Please remember that.**
 
-Cmake file:
+##### Cmake file:
+<hr>
 This CMake file contains two installation commands. These two command basically said when a package will be generated, where the desktop file and png file should be located.
 
 Now we the final Cmake file which is inside the main folder (not in src or res folder)
@@ -141,7 +142,7 @@ Next install the application into AppDir. Execute the following command:
 After executing this command, you will have a execuatable in “AppDir/usr/bin/” directory.
 
 ### Generating the recipe
-
+<hr>
 Appimage-builder is capable of inspecting the runtime dependencies of a given application to create a recipe for packaging it as AppImage. This can be done using the --generate argument. Execute the following command:
 
 > appimage-builder --generate
@@ -161,6 +162,7 @@ INFO:Generator:Searching AppDir
 </pre>
 
 ### Creating the AppImage
+<hr>
 This is the final step of creating an app image. Up until now, if everything works, then we will call the appimage builder to generate the appimage.
 While generating the app image, the appimage builder will test the generated app in different platforms like Fedora, Debian, Arch, Centos, etc. If you want to skip this test part you can add --skip-test argument.
 
