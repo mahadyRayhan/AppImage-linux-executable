@@ -1,1 +1,1 @@
-# AppImage-linux-executable-file-
+# AppImage-linux-executable-file
