@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Hello-AppImage-WOrld
+Comment=Hello World To AppImage
+TryExec=hello-world-appimage
+Exec=hello-world-appimage
+Icon=hello-world-appimage
+MimeType=image/x-foo;
+Categories=Utility;
