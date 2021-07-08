@@ -30,6 +30,12 @@ Appimage builder must be able to use docker without root permissions. So, you ne
 If you still have some permission error you may execute this command.
 > sudo chmod 666 /var/run/docker.sock
 
+### QT
+As this AppImage use QT, so you have to install QT in your system. To install qt, execute the following commands.
+> sudo apt-get install build-essential
+> sudo apt-get install qtcreator
+> sudo apt-get install qt5-default
+
 For my example I use CMake. So you need to install CMake also. You also need git to pull the code from GitHub. To do that, you can execute the following command.
 
 > sudo apt-get install git cmake
