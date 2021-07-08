@@ -7,6 +7,7 @@ AppImage is a format for distributing portable software on Linux without needing
 To create an AppImage we need some dependencies to be installed.
 
 ### AppImage Builder
+<hr>
 For Debian/Ubuntu system, we need some dependencies to install AppImage. Run this command to get all the dependencies needed to install AppImage builder.
 
 > sudo apt install -y python3-pip python3-setuptools patchelf desktop-file-utils libgdk-pixbuf2.0-dev fakeroot strace fuse
@@ -22,6 +23,7 @@ Now install appImage builder
 > sudo pip3 install appimage-builder
 
 ### Docker
+<hr>
 To install docker you can execute this command:
 
 > sudo apt-get install docker.io
@@ -36,6 +38,7 @@ If you still have some permission error you may execute this command.
 > sudo chmod 666 /var/run/docker.sock
 
 ### QT
+<hr>
 As this AppImage use QT, so you have to install QT in your system. To install qt, execute the following commands.
 > sudo apt-get install build-essential
 
@@ -81,12 +84,15 @@ In the folder you will find several files and folders. Folder will look like thi
 Before executing the next commands let me describe the code a little. There are two folders (res(resource) and src) and one CMake file in the project.
 
 #### SRC
+<hr>
 In the src folder, there is a main.cpp file, Which is the starting point of our program. Also, there are some additional files related to QT UI. There is also a extra library file name **easylogging++**. This is basically used for implement Logginf in the project.
 
 #### RES
+<hr>
 Next res(resource) directory. There are two different files in the res directory. A .desktop file and .png file. Remember .desktop file and .png file is very important. the desktop file is simply a shortcut that is used to launch applications in Linux. and the png file will be the icon of the project. To create an AppImage, you must have to provide these two file.
 
-Desktop file:
+##### Desktop file:
+<hr>
 If you open the desktop file, you file find something like this:
 
 <pre>
@@ -143,7 +149,7 @@ Next install the application into AppDir. Execute the following command:
 After executing this command, you will have a execuatable in “AppDir/usr/bin/” directory.
 
 ### Generating the recipe
-
+<hr>
 Appimage-builder is capable of inspecting the runtime dependencies of a given application to create a recipe for packaging it as AppImage. This can be done using the --generate argument. Execute the following command:
 
 > appimage-builder --generate
@@ -163,6 +169,7 @@ INFO:Generator:Searching AppDir
 </pre>
 
 ### Creating the AppImage
+<hr>
 This is the final step of creating an app image. Up until now, if everything works, then we will call the appimage builder to generate the appimage.
 While generating the app image, the appimage builder will test the generated app in different platforms like Fedora, Debian, Arch, Centos, etc. If you want to skip this test part you can add --skip-test argument.
 
