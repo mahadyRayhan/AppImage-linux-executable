@@ -1,4 +1,4 @@
-# AppImage-linux-executable-file
+# AppImage-linux-executable
 
 To create an AppImage we need some dependencies to be installed.
 
