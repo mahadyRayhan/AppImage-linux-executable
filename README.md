@@ -57,13 +57,20 @@ In the folder you will find several files and folders. Folder will look like thi
 <pre>
 .
 ├── CMakeLists.txt
+├── my_log.conf
 ├── res
-│   ├── CMakeLists.txt
-│   ├── hello-world-appimage.desktop
-│   └── hello-world-appimage.png
+│   ├── QTAppImage-hello-world.desktop
+│   └── QTAppImage-hello-world.png
 └── src
-    ├── CMakeLists.txt
-    └── main.cpp
+    ├── easylogging++.cc
+    ├── easylogging++.h
+    ├── main.cpp
+    ├── MainForm.ui.qml
+    ├── main.qml
+    ├── my_log.conf
+    ├── qml.qrc
+    └── qml.qrc.depends
+
 
 </pre>
 
@@ -82,11 +89,11 @@ If you open the desktop file, you file find something like this:
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Hello-AppImage-WOrld
+Name=QT-hello-world-AppImage
 Comment=Hello World To AppImage
-TryExec=hello-world-appimage
-Exec=hello-world-appimage
-Icon=hello-world-appimage
+TryExec=QTAppImage-hello-world
+Exec=QTAppImage-hello-world
+Icon=QTAppImage-hello-world
 MimeType=image/x-foo;
 Categories=Utility;
 </pre>
@@ -141,10 +148,10 @@ The tool will prompt a questionnaire to gather the minimal required information 
 
 <pre>
 INFO:Generator:Searching AppDir
-? ID [Eg: com.example.app]: hello-world-appimage
-? Application Name: Hello-AppImage-WOrld
-? Icon: hello-world-appimage
-? Executable path: usr/bin/hello-world-appimage
+? ID [Eg: com.example.app]: QTAppImage-hello-world
+? Application Name: QT-hello-world-AppImage
+? Icon: QTAppImage-hello-world
+? Executable path: usr/bin/QTAppImage-hello-world
 ? Arguments [Default: $@]: $@
 ? Version [Eg: 1.0.0]: latest
 ? Update Information [Default: guess]: guess
