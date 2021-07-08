@@ -47,7 +47,7 @@ depending on your application, you may need more dependency to be installed.
 
 After finishing the dependencies installation open a terminal. Download the sample code from Github. To get the code, execute the following command.
 
-> git clone https://github.com/mahadyRayhan/AppImage-linux-executable
+> git clone https://github.com/mahadyRayhan/AppImage-linux-executable/tree/AppImage-QT
 
 Next enter the directory. Execute following command to go to the project directory:
 > cd AppImage-linux-executable
