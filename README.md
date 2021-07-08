@@ -1,4 +1,4 @@
-# AppImage-linux-executable
+# AppImage-linux-executable(QT)
 
 To create an AppImage we need some dependencies to be installed.
 
