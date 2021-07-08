@@ -23,6 +23,7 @@ Now install appImage builder
 > sudo pip3 install appimage-builder
 
 ### Docker
+<hr>
 To install docker you can execute this command:
 
 > sudo apt-get install docker.io
@@ -66,14 +67,17 @@ In the folder you will find several files and folders. Folder will look like thi
 Before executing the next commands let me describe the code a little. There are two folders (res(resource) and src) and one CMake file in the project.
 
 #### SRC
+<hr>
 In the src folder, there is a main.cpp file, Which is the starting point of our program. This file contains nothing but a "Hello world" print.
 
 There is also a Cmake file in the src(source) directory. It contains a few very basic CMake commands like add_executable(contains program name and starting point) target_link_libraries(where you will include all the necessary libraries you need) and install command.
 
 #### RES
+<hr>
 Next res(resource) directory. There are three different files in the res directory. A Cmake file, a .desktop file and .png file. Remember .desktop file and .png file is very important. the desktop file is simply a shortcut that is used to launch applications in Linux. and the png file will be the icon of the project. To create an AppImage, you must have to provide these two file.
 
-Desktop file:
+##### Desktop file:
+<hr>
 If you open the desktop file, you file find something like this:
 
 <pre>
