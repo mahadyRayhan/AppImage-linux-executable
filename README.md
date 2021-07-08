@@ -139,10 +139,17 @@ Appimage-builder is capable of inspecting the runtime dependencies of a given ap
 
 The tool will prompt a questionnaire to gather the minimal required information to execute the application. If a desktop entry is found in the AppDir it will be used to fill the fields but you will be able to edit all the values. Make sure of specifying the executable path properly otherwise the execution will fail.
 
-Bas
-
-
-
+<pre>
+INFO:Generator:Searching AppDir
+? ID [Eg: com.example.app]: hello-world-appimage
+? Application Name: Hello-AppImage-WOrld
+? Icon: hello-world-appimage
+? Executable path: usr/bin/hello-world-appimage
+? Arguments [Default: $@]: $@
+? Version [Eg: 1.0.0]: latest
+? Update Information [Default: guess]: guess
+? Architecture: x86_64
+</pre>
 
 ### Creating the AppImage
 This is the final step of creating an app image. Up until now, if everything works, then we will call the appimage builder to generate the appimage.
