@@ -107,16 +107,16 @@ Categories=Utility;
 3. Type=Application
 > Tells the desktop that this desktop file pertains to an application. Other valid values for this key are Link and Directory.
 
-4. Name=Hello-AppImage-World
+4. Name=QT-hello-world-AppImage
 > Names of your application for the main menu and any launchers.
 
 5. Comment=Hello word to AppImage
 > Describes the application. Used as a tooltip.
 
-6. Exec=hello-world-appimage
+6. Exec=QTAppImage-hello-world
 > The command that starts this application from a shell. It can have arguments.
 
-7. Icon=hello-world-appimage
+7. Icon=QTAppImage-hello-world
 > The icon name is associated with this application.
 
 There are some other arguments like **Encoding**, **Terminal**, etc. You can check them from other online sources.
