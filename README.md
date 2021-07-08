@@ -25,6 +25,7 @@ To install docker you can execute this command:
 Appimage builder must be able to use docker without root permissions. So, you need to change docker permission. To do that, you can execute the following commands.
 
 > sudo groupadd docker
+
 > sudo usermod -aG docker $USER
 
 If you still have some permission error you may execute this command.
@@ -33,7 +34,9 @@ If you still have some permission error you may execute this command.
 ### QT
 As this AppImage use QT, so you have to install QT in your system. To install qt, execute the following commands.
 > sudo apt-get install build-essential
+
 > sudo apt-get install qtcreator
+
 > sudo apt-get install qt5-default
 
 For my example I use CMake. So you need to install CMake also. You also need git to pull the code from GitHub. To do that, you can execute the following command.
