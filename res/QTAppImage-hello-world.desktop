@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=QT-hello-world-AppImage
+Comment=Hello World To AppImage
+TryExec=QTAppImage-hello-world
+Exec=QTAppImage-hello-world
+Icon=QTAppImage-hello-world
+MimeType=image/x-foo;
+Categories=Utility;
