@@ -170,4 +170,4 @@ The command will be
 > appimage-builder --skip-test
 
 if the process success, you will get a working appimage for your hello-world project and you can run it in any Linux-based system from a terminal or just double-clicking it.
-
+If you want to package an application with a small UI, maybe a QT application, you can follow the other branch of this repo or simply click the link below **"https://github.com/mahadyRayhan/AppImage-linux-executable/tree/AppImage-QT"**
