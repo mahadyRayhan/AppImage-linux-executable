@@ -42,6 +42,8 @@ For my example I use CMake. So you need to install CMake also. You also need git
 
 depending on your application, you may need more dependency to be installed.
 
+#### Project Structure 
+
 After finishing the dependencies installation open a terminal. Download the sample code from Github. To get the code, execute the following command.
 
 > git clone https://github.com/mahadyRayhan/AppImage-linux-executable
