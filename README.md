@@ -170,6 +170,8 @@ INFO:Generator:Searching AppDir
 ? Architecture: x86_64
 </pre>
 
+Once the questionnaire is completed the application will be executed. At this point, make sure to test applications (all features) properly so the tool can detetct all the external resources it may use or accessed. Once the testing is done, close the application normally.
+
 ### Creating the AppImage
 <hr>
 This is the final step of creating an app image. Up until now, if everything works, then we will call the appimage builder to generate the appimage.
